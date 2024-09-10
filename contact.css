@@ -1,0 +1,128 @@
+/* styles.css */
+
+/* Application de la police d'écriture à toute la page */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    animation: bodyFadeIn 1.5s ease-in-out; /* Animation d'apparition douce */
+}
+
+/* Animation pour le body */
+@keyframes bodyFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style de l'en-tête avec la barre de navigation fixée */
+header {
+    position: fixed; /* Barre de navigation fixée */
+    top: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: #fff;
+    z-index: 1000; /* S'assure que la barre est au-dessus des autres éléments */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pour compenser la barre de navigation fixée et éviter que le contenu soit masqué */
+.hero {
+    margin-top: 80px; /* Ajuste en fonction de la hauteur de la barre de navigation */
+    height: calc(100vh - 80px); /* Prend en compte la hauteur de l'en-tête */
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour la section Contact */
+.contact-info {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.titre-section {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-left: 10px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-right: 10px;
+}
+
+.contact-icon:hover {
+    color: #007bff;
+}

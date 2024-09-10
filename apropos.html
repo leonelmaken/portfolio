@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | Portfolio Fullstack & Software Engineer</title>
+    
+    <!-- Lien vers Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lien vers ton fichier CSS personnalisé -->
+    <link rel="stylesheet" href="leonelmaken2.css">
+    <style>
+        .profile-image {
+            width: 40rem;
+            height: 40rem;
+            object-fit: contain;
+           /* border-radius: 50%;*/
+            cursor: pointer;
+        }
+        .about-text, .skills-text {
+            text-align: justify;
+        }
+        .popup-image {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .skill-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        /* Style pour le header */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding: 1rem 2rem;
+            color: #fff;
+            z-index: 1000;
+        }
+        
+        header .navbar-nav .nav-link {
+            color: #fff;
+            padding: 0.5rem 1rem;
+        }
+
+        header .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255,255,255,1)' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/></svg>");
+        }
+        
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête avec navigation -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="navbar-brand"><a href="leonelmaken.html" class="text-white text-decoration-none">Leonel Maken</a></h1>
+                </div>
+                <div class="col-md-6">
+                    <nav class="navbar navbar-expand-md navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="leonelmaken.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Competences.html">Compétences</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Photo de profil -->
+                <div class="col-md-4">
+                    <img src="IMG_20240702_111147_065.jpg" alt="Leonel Maken DONGMO DJOUAKE" class="img-fluid profile-image">
+                </div>
+                <!-- Biographie -->
+                <div class="col-md-8 about-text">
+                    <h2>Leonel Maken DONGMO DJOUAKE</h2>
+                    <p>Développeur Fullstack et Ingénieur logiciel passionné, avec une expertise dans la conception et le développement de solutions web, mobiles et logicielles robustes. Fort d'une expérience dans divers langages et frameworks, je suis dédié à la création de produits de haute qualité qui répondent aux besoins des clients.</p>
+                    <p>Actuellement étudiant à l'Université de Yaoundé I, je combine mes études en informatique avec des projets personnels et professionnels pour développer continuellement mes compétences.</p>
+                    <!-- Coordonnées -->
+                    <ul class="list-unstyled">
+                        <li><strong>Téléphone :</strong> <a href="tel:+237653661378">+237 653661378</a></li>
+                        <li><strong>Email :</strong> <a href="mailto:leonel.dongmo2@facsciences-uy1.cm">leonel.dongmo2@facsciences-uy1.cm</a></li>
+                        <li><strong>GitHub :</strong> <a href="https://github.com/leonelmaken" target="_blank">github.com/leonelmaken</a></li>
+                        <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/leonel-maken-dongmo-djouake-0242832b7/" target="_blank">Leonel Maken DONGMO DJOUAKE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section Compétences -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Compétence Frontend -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="me.jpeg" alt="Frontend" class="img-fluid mb-3">
+                    <h5>Développement Frontend</h5>
+                    <p class="skills-text">Expertise en HTML, CSS, JavaScript, React, Angular et Vue.js pour créer des interfaces utilisateur intuitives et réactives.</p>
+                </div>
+            </div>
+
+            <!-- Compétence Backend -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="back-end.jpeg" alt="Backend" class="img-fluid mb-3">
+                    <h5>Développement Backend</h5>
+                    <p class="skills-text">Maîtrise de Node.js, Express.js, Python (Django, Flask) et des bases de données SQL/NoSQL pour des solutions backend solides.</p>
+                </div>
+            </div>
+
+            <!-- Ingénierie Logicielle -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="moi.jpeg" alt="Ingénierie Logicielle" class="img-fluid mb-3">
+                    <h5>Ingénierie Logicielle</h5>
+                    <p class="skills-text">Expérience en architecture logicielle, DevOps, et tests automatisés pour des solutions de haute qualité.</p>
+                </div>
+            </div>
+
+            <!-- Compétence WordPress -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="wordpress.jpeg" alt="WordPress" class="img-fluid mb-3">
+                    <h5>Création de sites web avec WordPress</h5>
+                    <p class="skills-text">Capable de concevoir des sites dynamiques et interactifs avec WordPress, y compris la personnalisation de thèmes et l'intégration de plugins.</p>
+                </div>
+            </div>
+
+            <!-- Hébergement Web -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="maintenance.jpeg" alt="Hébergement" class="img-fluid mb-3">
+                    <h5>Hébergement Web et Maintenance</h5>
+                    <p class="skills-text">Configuration et gestion de serveurs d'hébergement pour assurer la performance et la sécurité des sites web, ainsi que leur maintenance continue.</p>
+                </div>
+            </div>
+
+            <!-- Nouvelle compétence : Logiciels IA -->
+            <div class="col-md-4 mb-4">
+                <div class="skill-card">
+                    <img src="ia.jpeg" alt="Logiciels IA" class="img-fluid mb-3">
+                    <h5>Manipulation des logiciels IA</h5>
+                    <p class="skills-text">Expérience dans l'utilisation et la personnalisation de logiciels d'intelligence artificielle pour l'automatisation et l'analyse des données, y compris TensorFlow, Keras et d'autres frameworks de deep learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .skill-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+            background-color: #fff; /* Fond blanc pour les cartes */
+        }
+        
+        /* Effet au survol */
+        .skill-card:hover {
+            transform: scale(1.05); /* Zoom au survol */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+        }
+
+        .skills-text {
+            text-align: justify; /* Justification du texte */
+        }
+    </style>
+            
+        </div>
+    </section>
+
+    <!-- Pop-up pour l'image -->
+    <div class="popup-image" id="popupImage">
+        <img src="IMG_20240702_111147_065.jpg" alt="Leonel Maken DONGMO DJOUAKE">
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Mon Portfolio - Créé par Leonel Maken DONGMO DJOUAKE</p>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script pour afficher l'image en pop-up -->
+    <script>
+        const profileImage = document.querySelector('.profile-image');
+        const popupImage = document.getElementById('popupImage');
+
+        profileImage.addEventListener('click', () => {
+            popupImage.style.display = 'flex';
+        });
+
+        popupImage.addEventListener('click', () => {
+            popupImage.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
